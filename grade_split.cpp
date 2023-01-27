@@ -150,7 +150,7 @@ TEST(Split, OneEven)
 	Node* evens = nullptr;
 
 	split(list, odds, evens);
-
+	//std::cout<<list<<std::endl;
 	EXPECT_TRUE(checkContent(evens, {2}));
 
 	deleteList(odds);
